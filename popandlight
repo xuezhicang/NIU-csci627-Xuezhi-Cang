@@ -14,3 +14,6 @@ var light_collection = ee.ImageCollection('NOAA/DMSP-OLS/NIGHTTIME_LIGHTS')
     .select('stable_lights')
     .map(createTimeBand_collection);
     
+    
+Map.addLayer(pop_collection,{},'population_lyr');   
+Map.addLayer(light_collection,{},'light_lyr');   
