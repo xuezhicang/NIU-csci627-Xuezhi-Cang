@@ -1,0 +1,19 @@
+// Adds a band containing image date as years since 1991.
+function createTimeBand_collection(img) {
+  var year = ee.Date(img.get('system:time_start')).get('year').subtract(2000);
+  return ee.Image(year).byte().addBands(img);
+}
+
+// put population density and nighttime light in the collection
+var pop_collection = ee.ImageCollection('CIESIN/GPWv4/unwpp-adjusted-population-density')
+    .select('population-density')
+    .filterDate('2000-01-01', '2015-12-31')
+    .map(createTimeBand_collection);
+var light_collection = ee.ImageCollection('NOAA/DMSP-OLS/NIGHTTIME_LIGHTS')
+    .filterDate('2000-01-01', '2015-12-31')
+    .select('stable_lights')
+    .map(createTimeBand_collection);
+    
+    
+Map.addLayer(pop_collection,{},'population_lyr');   
+Map.addLayer(light_collection,{},'light_lyr');   
