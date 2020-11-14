@@ -1,6 +1,12 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
 var geometry = /* color: #23cba7 */ee.Geometry.MultiPoint(),
-    geometry2 = /* color: #23cba7 */ee.Geometry.MultiPoint();
+    geometry2 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry3 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry4 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry5 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry6 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry7 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry8 = /* color: #23cba7 */ee.Geometry.MultiPoint();
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 // Adds a band containing image date as years since 1991.
 function createTimeBand_collection(img) {
@@ -23,7 +29,7 @@ Map.addLayer(pop_collection,{},'population_lyr');
 //Map.addLayer(light_collection,{},'light_lyr');   
 
 
-
+drawingTools.setShown(false);
 var drawingTools = Map.drawingTools();
 var ROI_Geometry =
     ui.Map.GeometryLayer({geometries: null, name: 'geometry', color: '23cba7'});
@@ -79,13 +85,13 @@ var map_layer = {
 };
 
 var select = ui.Select({
-  items: Object.keys(places),
+  items: Object.keys(map_layer),
   onChange: function(key) {
-    Map.setCenter(places[key][0], places[key][1]);
+    print(map_layer[key][0]);
   }
 });
 
 // Set a place holder.
 select.setPlaceholder('Choose a location...');
 
-print(select);
+Map.add(select);
