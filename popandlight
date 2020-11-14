@@ -29,8 +29,9 @@ Map.addLayer(pop_collection,{},'population_lyr');
 //Map.addLayer(light_collection,{},'light_lyr');   
 
 
-drawingTools.setShown(false);
+
 var drawingTools = Map.drawingTools();
+drawingTools.setShown(false);
 var ROI_Geometry =
     ui.Map.GeometryLayer({geometries: null, name: 'geometry', color: '23cba7'});
 
