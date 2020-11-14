@@ -73,7 +73,7 @@ var controlPanel = ui.Panel({
 Map.add(controlPanel);
 
 
-var places = {
+var map_layer = {
   MTV: [-122.0849, 37.3887],
   PEK: [116.4056, 39.9097],
   ZRH: [8.536, 47.376]
