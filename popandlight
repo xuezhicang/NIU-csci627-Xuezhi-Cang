@@ -1,5 +1,6 @@
 /**** Start of imports. If edited, may not auto-convert in the playground. ****/
-var geometry = /* color: #23cba7 */ee.Geometry.MultiPoint();
+var geometry = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry2 = /* color: #23cba7 */ee.Geometry.MultiPoint();
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 // Adds a band containing image date as years since 1991.
 function createTimeBand_collection(img) {
@@ -19,7 +20,7 @@ var light_collection = ee.ImageCollection('NOAA/DMSP-OLS/NIGHTTIME_LIGHTS')
     
     
 Map.addLayer(pop_collection,{},'population_lyr');   
-Map.addLayer(light_collection,{},'light_lyr');   
+//Map.addLayer(light_collection,{},'light_lyr');   
 
 
 
@@ -60,7 +61,7 @@ var controlPanel = ui.Panel({
       style: {stretch: 'horizontal'}
     }),
     ui.Label('2. Draw a geometry.'),
-    ui.Label('3. Wait for chart to render.'),
+    ui.Label('3. Wait for chart to draw.'),
     ui.Label(
         '4. Repeat 1-3 or edit/move\ngeometry for a new chart.',
         {whiteSpace: 'pre'})
