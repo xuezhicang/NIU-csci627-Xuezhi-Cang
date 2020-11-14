@@ -20,7 +20,10 @@ Map.addLayer(light_collection,{},'light_lyr');
 
 
 
-
+function clearGeometry() {
+  var layers = drawingTools.layers();
+  layers.get(0).geometries().remove(layers.get(0).geometries().get(0));
+}
 
 function drawPolygon() {
   clearGeometry();
