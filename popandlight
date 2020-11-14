@@ -17,3 +17,34 @@ var light_collection = ee.ImageCollection('NOAA/DMSP-OLS/NIGHTTIME_LIGHTS')
     
 Map.addLayer(pop_collection,{},'population_lyr');   
 Map.addLayer(light_collection,{},'light_lyr');   
+
+
+
+
+
+
+var controlPanel = ui.Panel({
+  widgets: [
+    ui.Label('1. Select a drawing mode.'),
+
+    ui.Button({
+      label: ' Polygon',
+      onClick: drawPolygon,
+      style: {stretch: 'horizontal'}
+    }),
+    ui.Button({
+      label:  ' Point',
+      onClick: drawPoint,
+      style: {stretch: 'horizontal'}
+    }),
+    ui.Label('2. Draw a geometry.'),
+    ui.Label('3. Wait for chart to render.'),
+    ui.Label(
+        '4. Repeat 1-3 or edit/move\ngeometry for a new chart.',
+        {whiteSpace: 'pre'})
+  ],
+  style: {position: 'bottom-left'},
+  layout: null,
+});
+
+Map.add(controlPanel);
