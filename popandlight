@@ -6,7 +6,14 @@ var geometry = /* color: #23cba7 */ee.Geometry.MultiPoint(),
     geometry5 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
     geometry6 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
     geometry7 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
-    geometry8 = /* color: #23cba7 */ee.Geometry.MultiPoint();
+    geometry8 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry9 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry10 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry11 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry12 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry13 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry14 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry15 = /* color: #23cba7 */ee.Geometry.MultiPoint();
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 // Adds a band containing image date as years since 1991.
 function createTimeBand_collection(img) {
@@ -92,7 +99,15 @@ var select = ui.Select({
   }
 });
 
-// Set a place holder.
-select.setPlaceholder('Choose a location...');
+
+select.setPlaceholder('Choose a layer...');
 
 Map.add(select);
+
+
+var panel = ui.Panel({style: {position: 'top-right'}});
+panel.style().set({
+  width: '400px',
+  position: 'right'
+});
+Map.add(panel);
