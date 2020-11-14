@@ -13,7 +13,9 @@ var geometry = /* color: #23cba7 */ee.Geometry.MultiPoint(),
     geometry12 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
     geometry13 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
     geometry14 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
-    geometry15 = /* color: #23cba7 */ee.Geometry.MultiPoint();
+    geometry15 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry16 = /* color: #23cba7 */ee.Geometry.MultiPoint(),
+    geometry17 = /* color: #23cba7 */ee.Geometry.MultiPoint();
 /***** End of imports. If edited, may not auto-convert in the playground. *****/
 // Adds a band containing image date as years since 1991.
 function createTimeBand_collection(img) {
