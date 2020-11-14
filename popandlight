@@ -22,7 +22,16 @@ Map.addLayer(light_collection,{},'light_lyr');
 
 
 
-
+function drawPolygon() {
+  clearGeometry();
+  drawingTools.setShape('polygon');
+  drawingTools.draw();
+}
+function drawPoint() {
+  clearGeometry();
+  drawingTools.setShape('point');
+  drawingTools.draw();
+}
 var controlPanel = ui.Panel({
   widgets: [
     ui.Label('1. Select a drawing mode.'),
