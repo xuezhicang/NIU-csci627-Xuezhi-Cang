@@ -1,0 +1,48 @@
+[id = "info"]
+{
+display: flex;
+justify-content: space-between; 
+}
+
+.left
+{
+padding: 10px 80px 10px 10px;
+border: solid;
+border-color: blue;
+border-width: 5px;
+font-size: 10pt; 
+line-height: 2
+
+}
+
+[id="name"]
+{
+  color: green;
+  font-size: 15pt;
+  margin: 0;
+}
+[id="zid"]
+{
+  color: green;
+}
+.right
+{
+padding: 10px 10px 10px 10px;
+font-weight: normal;
+font-size: 10pt;
+font-style: italic;
+color: black;
+margin-bottom: 10px;
+line-height: 2;
+}
+
+
+[id="camera"]
+{
+  fill:#000080;
+}
+
+#switch:hover ~ #flash
+{ 
+  fill: white;
+}
