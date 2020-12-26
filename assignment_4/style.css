@@ -1,0 +1,51 @@
+[id = "info"]
+{
+display: flex;
+justify-content: space-between; 
+font-weight: bold;  
+}
+
+.left
+{
+padding: 10px 80px 10px 10px;
+border: solid;
+border-color: blue;
+border-width: 5px;
+font-size: 10pt; 
+line-height: 2
+}
+
+[id="name"]
+{
+  color: green;
+  font-size: 15pt;
+  margin: 0;
+}
+[id="zid"]
+{
+  color: green;
+}
+.right
+{
+padding: 10px 10px 10px 10px;
+font-weight: normal;
+font-size: 10pt;
+font-style: italic;
+color: black;
+margin-bottom: 0;
+line-height: 2;
+}
+
+
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 100px;                  
+  height: 50px;                 
+  padding: 2px;             
+  font: 12px sans-serif;         
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
