@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "assignment 3",
+  "data": {
+    "url": "https://gist.githubusercontent.com/dakoop/1c5d0c3410bbb994b8d7446bf60776ba/raw/de73bd1306193caa77a110825c54ffd695d3e467/inspectionData.json"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Not Inspected",
+        "Fail",
+        "Pass with Conditions",
+        "Pass"
+      ],
+      "as": [
+        "insepection_class",
+        "total"
+      ]
+    },
+    {
+      "calculate": "if(datum.insepection_class === 'Pass', 0, if(datum.insepection_class === 'Pass with Conditions',1,if(datum.insepection_class === 'Fail',3,4)))",
+      "as": "class_Order"
+    },
+    {
+      "calculate": "substring(datum['Inspection Date'], 0,4)",
+      "as": "year_string"
+    },
+    {
+      "calculate": "substring(datum['Inspection Date'], 5,7)",
+      "as": "month_string"
+    },
+    {
+      "timeUnit": "month",
+      "field": "month_string",
+      "as": "month"
+    },
+    {
+      "calculate": "datetime(datum.year_string, datum.month_string-1,1)",
+      "as": "combined"
+    }
+  ],
+  "mark": "bar",
+  "width": {
+    "step": 15
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "yearmonth",
+      "field": "combined",
+      "type": "Ordinal",
+      "title": "Month of the year"
+    },
+    "y": {
+      "field": "total",
+      "type": "quantitative",
+      "aggregate": "sum",
+      "title": "Number of inspections"
+    },
+    "color": {
+      "field": "insepection_class",
+      "scale": {
+        "range": [
+          "#C0C0C0",
+          "#FF0000",
+          "#0000FF",
+          "#32CD32"
+        ]
+      },
+      "title": "results",
+      "sort": {
+        "field": "class_Order",
+        "order": "descending"
+      }
+    },
+    "order": {
+      "field": "class_Order"
+    }
+  },
+  "config": {}
+}

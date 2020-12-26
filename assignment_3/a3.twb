@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='inspectionData (2)' inline='true' name='federated.0lec4th14971b0189zy2i1qsgq44' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='inspectionData' name='semistructpassivestore-direct.1aamgv91bzjx0n17g0h2j1nsyj8u'>
+            <connection class='semistructpassivestore-direct' directory='D:/csci627/assignment_3' filename='inspectionData.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[inspectionData.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='semistructpassivestore-direct.1aamgv91bzjx0n17g0h2j1nsyj8u' name='inspectionData.json' table='[inspectionData.json]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='semistructpassivestore-direct.1aamgv91bzjx0n17g0h2j1nsyj8u' name='inspectionData.json' table='[inspectionData.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[inspectionData.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[inspectionData.json_9998E00167FB417BA511EC68A0DBAD47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fail</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fail]</local-name>
+            <parent-name>[inspectionData.json]</parent-name>
+            <remote-alias>Fail</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[inspectionData.json_9998E00167FB417BA511EC68A0DBAD47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inspection Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Inspection Date]</local-name>
+            <parent-name>[inspectionData.json]</parent-name>
+            <remote-alias>Inspection Date</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[inspectionData.json_9998E00167FB417BA511EC68A0DBAD47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not Inspected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Not Inspected]</local-name>
+            <parent-name>[inspectionData.json]</parent-name>
+            <remote-alias>Not Inspected</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[inspectionData.json_9998E00167FB417BA511EC68A0DBAD47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass]</local-name>
+            <parent-name>[inspectionData.json]</parent-name>
+            <remote-alias>Pass</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[inspectionData.json_9998E00167FB417BA511EC68A0DBAD47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass with Conditions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass with Conditions]</local-name>
+            <parent-name>[inspectionData.json]</parent-name>
+            <remote-alias>Pass with Conditions</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[inspectionData.json_9998E00167FB417BA511EC68A0DBAD47]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='datetime' name='[Calculation_565483260801224712]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATEPARSE(&apos;yyyy-MM&apos;,[Inspection Date])' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[Fail]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Fail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='string' datatype-customized='true' name='[Inspection Date]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>Inspection Date</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[Not Inspected]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Not Inspected</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[Pass with Conditions]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Pass with Conditions</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[Pass]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>Pass</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='inspectionData.json' datatype='table' name='[__tableau_internal_object_id__].[inspectionData.json_9998E00167FB417BA511EC68A0DBAD47]' role='measure' type='quantitative' />
+      <column-instance column='[Fail]' derivation='Sum' name='[sum:Fail:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Not Inspected]' derivation='Sum' name='[sum:Not Inspected:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Pass with Conditions]' derivation='Sum' name='[sum:Pass with Conditions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Pass]' derivation='Sum' name='[sum:Pass:qk]' pivot='key' type='quantitative' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Inspection Data' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[Inspection Date]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Inspection Data'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[Inspection Date]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Pass with Conditions:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Pass:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Not Inspected:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Fail:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Document Index (generated)' />
+        <field-sort-custom-order field='Fail' />
+        <field-sort-custom-order field='Inspection Date' />
+        <field-sort-custom-order field='Calculation_565483260801224712' />
+        <field-sort-custom-order field='Calculation_565483260800221191' />
+        <field-sort-custom-order field='Not Inspected' />
+        <field-sort-custom-order field='Pass' />
+        <field-sort-custom-order field='Pass with Conditions' />
+        <field-sort-custom-order field='Calculation_565483260796235776' />
+        <field-sort-custom-order field='Calculation_565483260799930374' />
+        <field-sort-custom-order field='Calculation_565483260798320643' />
+        <field-sort-custom-order field='Calculation_565483260799418373' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='inspectionData.json' id='inspectionData.json_9998E00167FB417BA511EC68A0DBAD47'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1aamgv91bzjx0n17g0h2j1nsyj8u' name='inspectionData.json' table='[inspectionData.json]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Chicago Food Inspectioins</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='inspectionData (2)' name='federated.0lec4th14971b0189zy2i1qsgq44' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lec4th14971b0189zy2i1qsgq44'>
+            <column caption='Calculation1' datatype='datetime' name='[Calculation_565483260801224712]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATEPARSE(&apos;yyyy-MM&apos;,[Inspection Date])' />
+            </column>
+            <column datatype='real' name='[Fail]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>Fail</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='string' datatype-customized='true' name='[Inspection Date]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>Inspection Date</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='real' name='[Not Inspected]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>Not Inspected</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='real' name='[Pass with Conditions]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>Pass with Conditions</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column datatype='real' name='[Pass]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>Pass</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Fail]' derivation='Sum' name='[sum:Fail:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Not Inspected]' derivation='Sum' name='[sum:Not Inspected:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pass with Conditions]' derivation='Sum' name='[sum:Pass with Conditions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pass]' derivation='Sum' name='[sum:Pass:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_565483260801224712]' derivation='Month-Trunc' name='[tmn:Calculation_565483260801224712:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lec4th14971b0189zy2i1qsgq44].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Not Inspected:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Fail:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Pass with Conditions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Pass:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0lec4th14971b0189zy2i1qsgq44].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Not Inspected:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Fail:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Pass with Conditions:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0lec4th14971b0189zy2i1qsgq44].[sum:Pass:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0lec4th14971b0189zy2i1qsgq44].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0lec4th14971b0189zy2i1qsgq44].[Multiple Values]' value='104' />
+            <encoding attr='space' class='0' field='[federated.0lec4th14971b0189zy2i1qsgq44].[tmn:Calculation_565483260801224712:qk]' field-type='quantitative' major-origin='#2018-01-02 00:00:00#' major-spacing='3.0' major-units='months' max='#2020-08-15 14:24:00#' min='#2017-12-01 09:36:00#' minor-origin='#2019-04-02 00:00:00#' minor-show='false' minor-spacing='1.0' minor-units='months' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0lec4th14971b0189zy2i1qsgq44].[Multiple Values]' scope='rows' value='Num Inspections' />
+            <format attr='title' class='0' field='[federated.0lec4th14971b0189zy2i1qsgq44].[tmn:Calculation_565483260801224712:qk]' scope='cols' value='Month' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0lec4th14971b0189zy2i1qsgq44].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#b6992d' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1379' />
+                <format attr='maxwidth' value='1379' />
+                <format attr='minheight' value='718' />
+                <format attr='maxheight' value='718' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lec4th14971b0189zy2i1qsgq44].[Multiple Values]</rows>
+        <cols>[federated.0lec4th14971b0189zy2i1qsgq44].[tmn:Calculation_565483260801224712:qk]</cols>
+      </table>
+      <simple-id uuid='{FF5E5B02-8113-4503-93C6-DC1EAE8872EC}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='114'>
+            <card pane-specification-id='0' param='[federated.0lec4th14971b0189zy2i1qsgq44].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0lec4th14971b0189zy2i1qsgq44].[:Measure Names]</field>
+            <field>[federated.0lec4th14971b0189zy2i1qsgq44].[none:Inspection Date:nk]</field>
+            <field>[federated.0lec4th14971b0189zy2i1qsgq44].[yr:Calculation_565483260801224712:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{183AA2CA-8EBB-4320-9FDA-A7190E07B3EF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
