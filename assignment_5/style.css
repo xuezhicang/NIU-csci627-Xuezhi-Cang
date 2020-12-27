@@ -1,0 +1,91 @@
+[id = "info"]
+{
+display: flex;
+justify-content: space-between; 
+font-weight: bold;  
+}
+
+.left
+{
+padding: 10px 80px 10px 10px;
+border: solid;
+border-color: blue;
+border-width: 5px;
+font-size: 10pt; 
+line-height: 2
+}
+
+[id="name"]
+{
+  color: green;
+  font-size: 15pt;
+  margin: 0;
+}
+[id="zid"]
+{
+  color: green;
+}
+.right
+{
+padding: 10px 10px 10px 10px;
+font-weight: normal;
+font-size: 10pt;
+font-style: italic;
+color: black;
+margin-bottom: 0;
+line-height: 2;
+}
+
+
+
+#filter-map {
+  display: flex;
+  flex-direction: row;
+}
+
+.point {
+  fill: blue;
+  stroke: white;
+  stroke-width: 1px;
+}
+
+.district {
+  fill: lightgray;
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.route {
+  stroke: red;
+}
+.listing li
+{
+  float: left;
+  width: 20em;
+  list-style-type: none;
+}  /* stop the float */
+
+li.highlight {
+  background-color: Orange;
+}
+
+.map circle.highlight {
+  fill: Orange;
+  r:8;
+}
+
+.map line.highlight {
+  stroke: Orange;
+  stroke-width: 1%;
+
+
+}
+
+
+.map circle.transparent {
+  opacity: 0;
+  size:0;
+}
+.map line.transparent {
+  opacity: 0;
+}
